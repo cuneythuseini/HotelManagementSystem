@@ -70,7 +70,7 @@
 ![Update](https://github.com/cuneythuseini/HotelManagementSystem/blob/master/img/UdreduvajPorakiOdKlienti.png)
 
 #### 4) Чисти
-Кликнете на копчето за бришење за да ги исчистите полињата за текст.
+Кликнете на копчето за чистење за да ги исчистите полињата за текст.
 
 ### За Нас
 Кракот порака за нас.
