@@ -1,0 +1,22 @@
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\bin\Debug\Hotel Management System.exe.config
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\bin\Debug\Hotel Management System.exe
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\bin\Debug\Hotel Management System.pdb
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel Management System.csprojResolveAssemblyReference.cache
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.Properties.Resources.resources
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel Management System.csproj.GenerateResource.Cache
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel Management System.exe
+c:\users\cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel Management System.pdb
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmNewCustomer.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmAdminLogin.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmHome.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmRooms.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmCustomers.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\bin\Debug\Interop.WMPLib.dll
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Interop.WMPLib.dll
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel Management System.csproj.ResolveComReference.cache
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmRadio.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmNewsPaper.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmCustomerMessages.resources
+C:\Users\Cuneyt\documents\visual studio 2013\Projects\Hotel Management System\Hotel Management System\obj\Debug\Hotel_Management_System.FrmUpdateUserName_Password.resources
