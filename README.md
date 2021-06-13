@@ -79,3 +79,72 @@
 Копче за да излезете од апликацијата.
 
 ## Опис на формата FrmCustomers
+Бидејќи формата муштерии е најважниот дел од проектот,да ги испитаме кодовите на образецот муштерии.
+
+Бидејќи базата на податоци се користи во проектот, додадената база на податоци мора да работи на секој компјутер. Затоа, кога креираме објект од класата "OleDbConnection", треба да ја користите командата "Application.StartupPath".
+
+
+
+`OleDbConnection oleDbConnection = new OleDbConnection(@"Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + Application.StartupPath + "\\CustomerInfos.mdb");`
+
+Во методата showInfos() селектираме сите инфорамции во access датабаза.Додека имаме инфорамции во соодветната колона со користење listViweItem читаме едно по едно информацијата  и пиркажиуваме во ListView за да гледа корисникот.Кога ќе заврши while циклусот мора да затвориме датабазата за да не се појави грешка понатаму.
+
+
+    private void showInfos()
+        {
+            listView1.Items.Clear();
+            oleDbConnection.Open();
+
+            OleDbCommand oleDbCommand = new OleDbCommand();
+            oleDbCommand.Connection = oleDbConnection;
+            oleDbCommand.CommandText = "select * from Informations";
+
+            OleDbDataReader oleDbDataReader = oleDbCommand.ExecuteReader();
+
+            while (oleDbDataReader.Read())
+            {
+                ListViewItem listViewItem = new ListViewItem();
+                listViewItem.Text = oleDbDataReader["NoCustomer"].ToString();
+                listViewItem.SubItems.Add(oleDbDataReader["Name"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["LastName"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["Gender"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["PhoneNumber"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["IDNumber"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["NumberOfRooms"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["EMail"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["Price"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["EntryDate"].ToString());
+                listViewItem.SubItems.Add(oleDbDataReader["ReleaseDate"].ToString());
+
+                listView1.Items.Add(listViewItem);
+            }
+            oleDbConnection.Close();
+        }
+        
+Метод за бришење муштерија;Соодветно отвориме датабазата проверуваме дали е полн доколку е полн  односно дали е муштеријата точно селектриано ако е точно селектирана тогаш бришеме муштерија според ID, т.е **noOfCustomer**.(Со корисење команди за датабази).
+
+     private void btnDelete_Click(object sender, EventArgs e)
+        {
+            oleDbConnection.Open();
+
+            if (isFill())
+            {
+                OleDbCommand oleDbCommand = new OleDbCommand("delete from Informations where NoCustomer=(" + noOfCustomer + ")", oleDbConnection);
+
+                if (MessageBox.Show("Дали сакате да избришете муштеријата", "Избриши", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    oleDbCommand.ExecuteNonQuery();
+                    clearAllAreas();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Селектриајте Муштерија за да избришете инофрмациите", "Информација", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            oleDbConnection.Close();
+
+            showInfos();
+
+        }
+
